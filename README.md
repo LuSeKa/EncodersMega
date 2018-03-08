@@ -1,6 +1,10 @@
 # EncodersMega
 Small interrrupt-based library to use two quadrature wheel encoders with the Aduino Mega
 
+# Dependencies
+## digitalWriteFast
+
+https://github.com/watterott/Arduino-Libs/tree/master/digitalWriteFast
 
 # How to Use
 ## ADD THIS TO YOUR PROJECT CODE
