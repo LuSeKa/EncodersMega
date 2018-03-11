@@ -1,11 +1,11 @@
 #include "Arduino.h"
-#include "digitalWriteFast.h"
+//#include "digitalWriteFast.h"
 
 // a lot of stuff has to be know at compile time for efficiency of the ISRs.
 
 // defines the digital I/O of the second encoder channel. Can be freely chosen.
-#define ENCODERDIRPIN_1 14
-#define ENCODERDIRPIN_2 15
+#define ENCODERDIRPIN_1 16
+#define ENCODERDIRPIN_2 17
 // these are hardware interrupt pins and specific for the different kinds of Arduinos
 #define ENCODERINTPIN_1 2
 #define ENCODERINTPIN_2 3
@@ -31,7 +31,7 @@ class EncodersMega
 // ADD THIS TO YOUR PROJECT CODE //
 /*
  * Includes:
-#include "digitalWriteFast.h"
+//#include "digitalWriteFast.h"
 #include "EncodersMega.h"
  * Declarations:
 EncodersMega encoders;

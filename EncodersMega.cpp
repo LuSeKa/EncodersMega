@@ -22,10 +22,10 @@ long EncodersMega::getCount_2()
 // these are tuned for efficiency (i.e., low number of CPU cycles) and therefore not quite as readable as code should be.
 void EncodersMega::encoderCount_1()
 {
-  EncodersMega::counter1 += ENCODERDIRECTION_1 * ((digitalReadFast(ENCODERINTPIN_1)<<1) - 1) * ((digitalReadFast(ENCODERDIRPIN_1)<<1) - 1); // add -1 or 1 to counter, depending on the state of dirPin1 
+  EncodersMega::counter1 += ENCODERDIRECTION_1 * ((digitalRead(ENCODERINTPIN_1)<<1) - 1) * ((digitalRead(ENCODERDIRPIN_1)<<1) - 1); // add -1 or 1 to counter, depending on the state of dirPin1 
 }
 
 void EncodersMega::encoderCount_2()
 {
-  EncodersMega::counter2 += ENCODERDIRECTION_2 * ((digitalReadFast(ENCODERINTPIN_2)<<1) - 1) * ((digitalReadFast(ENCODERDIRPIN_2)<<1) - 1); // add -1 or 1 to counter, depending on the state of dirPin2
+  EncodersMega::counter2 += ENCODERDIRECTION_2 * ((digitalRead(ENCODERINTPIN_2)<<1) - 1) * ((digitalRead(ENCODERDIRPIN_2)<<1) - 1); // add -1 or 1 to counter, depending on the state of dirPin2
 }
